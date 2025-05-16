@@ -1,0 +1,210 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1C1C1C;
+    background-color: #d5d3d5;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1386px;
+    padding: 0 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login__inner{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 50%;
+    border-radius: 24px 0 0 24px;
+    background-color: #fff;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3); /*не работает*/
+}
+
+.login__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; /*надо этот стиль? */
+    height: 100%;
+    max-width: 365px;
+}
+
+.title{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.subtitle{
+    display: inline-block;
+    color: #525252;
+    padding-bottom: 24px;
+}
+
+.form__group{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px; 
+    font-weight: 400;
+    width: 100%;
+}
+
+.form__group-container{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form__input{
+    border: 1px solid #F0EDFF;
+    border-radius: 16px;
+    background-color: #F0EDFF;
+    height: 52px;
+    padding-left: 48px;
+    width: 100%;
+}
+
+.form__input-box{
+    position: relative;
+}
+
+.form__input-box::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    background-repeat: no-repeat;
+}
+
+.form__input-box--user::before{
+    background-image: url('../images/log-img.svg');
+    width: 16px;
+    height: 21px;
+}
+
+.form__input-box--pass::before{
+    background-image: url('../images/pass-img.svg');
+    width: 18px;
+    height: 21px;
+}
+
+input::placeholder{
+    color: #1C1C1C;
+}
+
+.wrapper__btn{
+    display: flex;
+    justify-content: center;
+}
+
+.form__btn{
+    margin: 24px 0;
+    padding: 17px 31px;
+    border: none; 
+    border-radius: 16px;
+    width: auto;
+    background: linear-gradient(68deg, #9181F4 0%, #6F5BF0 52%, #5038ED 100%);
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.subtitle{
+    font-size: 16px;
+}
+
+.subtitle span{
+    font-weight: 700;
+    color: #1C1C1C;
+}
+
+.login__alt{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.login-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F0EDFF;
+    padding: 11px 110px;
+    border-radius: 16px;
+    max-width: 365px;
+    height: auto;
+    text-align: center;
+    font-weight: 12px;
+}
+
+.login-btn b{
+    color: #1C1C1C;
+}
+
+.login-btn span{
+    flex: 1 0 auto;
+}
+
+.login-btn img{
+    display: inline-block;
+    padding-right: 8px;
+}
+
+.slogan__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 50%;
+    background-image: url(../images/slogan-img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 24px 24px 0;
+}
+
+.slogan__box{
+    display: flex;
+    min-height: 524px;
+    min-width: 412px;
+    border-radius: 46px;
+    background-color: rgba(255, 255, 255, .21);
+    border: 1px solid rgba(255, 255, 255, .52);
+    backdrop-filter: blur(13px);
+    position: relative;
+}
+
+.slogan__text{
+    padding: 26px 31px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.decoration-img{
+    position: absolute;
+    z-index: 1;
+    top: 63.7%;
+    left: -10%;
+    width: 79px;
+    height: 79px;
+}
+
+.basic-img{
+    position: absolute;
+    z-index: 1;
+    bottom: -1px;
+    right: -25%;
+}
