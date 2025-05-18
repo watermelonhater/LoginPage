@@ -9,11 +9,13 @@ body{
 
 .container{
     max-width: 1386px;
-    padding: 0 10px;
+    border-radius: 24px;
+    overflow: hidden;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
 }
 
 .login__inner{
@@ -21,9 +23,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     width: 50%;
-    border-radius: 24px 0 0 24px;
     background-color: #fff;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3); /*не работает*/
 }
 
 .login__box{
@@ -47,6 +47,27 @@ body{
     display: inline-block;
     color: #525252;
     padding-bottom: 24px;
+}
+
+.subtitle--decor{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.span--decor{
+    flex: 1 0 auto;
+    max-width: 140px;
+    text-align: center;
+}
+
+.subtitle--decor::before,
+.subtitle--decor::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #F0EDFF;
+    flex: 0 1 auto;
 }
 
 .form__group{
@@ -125,7 +146,7 @@ input::placeholder{
     font-size: 16px;
 }
 
-.subtitle span{
+.subtitle b{
     font-weight: 700;
     color: #1C1C1C;
 }
@@ -171,8 +192,7 @@ input::placeholder{
     background-image: url(../images/slogan-img.png);
     background-repeat: no-repeat;
     background-position: center center;
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 0 24px 24px 0;
+    background-size: cover;
 }
 
 .slogan__box{
